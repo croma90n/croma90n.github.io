@@ -1,0 +1,541 @@
+/*
+  web fonts from Google:
+  Julius Sans One â€“ https://fonts.google.com/specimen/Julius+Sans+One?query=julius
+  Libre Baskerville â€“ https://fonts.google.com/specimen/Libre+Baskerville?query=baskerville
+ */
+@import url(http://fonts.googleapis.com/css?family=Julius+Sans+One|Parkinsans);
+
+/* base CSS */
+* {
+  -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+  box-sizing: border-box;         /* Opera/IE 8+ */
+}
+
+html {
+  padding: 0;
+  margin: 0;
+}
+body {
+  padding: 0;
+  margin: 0;
+  color: #325050;
+  background: #fff;
+  font-family: 'Parkinsans', sans-serif;
+  font-weight: lighter;
+  /*font-family: 'Libre Baskerville', sans-serif;*/
+  font-size: 70%;
+}
+
+header {
+  height: 230px;
+  padding: 20px 0 70px 0;
+  background: #2d6360 50% 0 url(header.jpg) no-repeat; /* old IE fallback */
+  background-image: url(header.png);
+  background-attachment: fixed;
+  background-position:0 0;
+  background-repeat: no-repeat;
+  background-size:auto;
+  text-align: center;
+  /*border: 3px dashed yellow;*/
+  box-shadow:inset 0 -.5em 3em rgba(0, 0, 0, 0.5);
+}
+
+/* imagen previa titulo */
+div.avenida-bis {
+
+  background: url(dienterecortadosinfondo1.png);
+
+  background-repeat: no-repeat;
+  background-origin: padding-box;
+  padding-left: 110px;
+  margin:0;
+  background-size: 100px;
+
+  /*border: 3px dashed blue;*/
+}
+
+h1, h2 {
+  padding: 0 10%;
+  margin: 0;
+  color: #fff;
+  font-weight: normal;
+  /*border: 3px dashed blue;*/
+}
+
+h1 {
+  padding-top: 0;
+  padding-bottom: 5px;
+  border-bottom: none;
+  font-family: 'Julius Sans One', sans-serif;
+  font-size: 3.2em;
+  text-transform: uppercase;
+}
+
+h2 {
+  display: block;
+  padding-top: 5px;
+  padding-bottom: 30px;
+  border-top: none;
+  color: rgba(255,255,255,0.6);
+  font-size: 1.6em;
+  font-style: italic;
+}
+
+
+h3 {
+  margin: 2em 0 0 0;
+  color: #2e484c;
+  font-family: 'Julius Sans One', sans-serif;
+  font-size: 1.8em;
+  font-weight: normal;
+  text-transform: uppercase;
+}
+p {
+  margin: 0.70em 0;
+  line-height: 2;
+}
+
+
+
+div.explanation {
+  padding-bottom: 4em;
+  background-color: rgba(138,188,159,0.5);
+  padding:0;
+  margin:0;
+}
+
+/* debe de estar después paa que lo lea el css  */
+div.primera, div.contacto{
+  background-color: rgba(138,188,159,0.3);
+}
+
+div.servicios, div.contacto{
+  text-align: center;
+}
+
+div.dec {
+box-shadow:inset 0 -.5em 2em rgba(0, 0, 0, 0.5);
+}
+div.decoracion1 {
+  background: #0d2c40 url(recorte_entrada.png);
+  background-repeat: no-repeat;
+  background-position: right left;
+  background-size: cover;
+  position: relative;
+  color: #ffffff;
+  height: 70vh;
+  margin: 0;
+  padding: 0 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+div.decoracion2 div {
+  text-align: right;
+  padding: 1em;
+  marin
+  /*border: 3px dashed blue;*/
+  /*border: 3px dashed blue;*/
+}
+
+div.decoracion2 {
+  background: #0d2c40 url(avatarclinica2.png);
+  background-repeat: no-repeat;
+  background-position: right left;
+  background-size: cover;
+  position: relative;
+  color: #ffffff;
+
+  height: 70vh;
+  margin: 0;
+  padding: 0 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+div.decoracion3 {
+  background: #0d2c40 url(decorativo1.png);
+  background-repeat: no-repeat;
+  background-position: right left;
+  background-size: cover;
+  position: relative;
+  color: #ffffff;
+  height: 70vh;
+  margin: 0;
+  padding: 0 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+
+/* coloured cutoff */
+div.participation, div.benefits {
+  background-attachment: scroll, scroll, fixed;
+  background-color: rgba(138,188,159,0.5);
+  background-image: url(contours-opaque.png), url(gridlines-opaque.png), url(bamboo.png);
+  background-repeat: repeat, repeat, no-repeat;
+  background-size: auto, auto, cover;
+}
+
+
+/* main footer */
+footer {
+  clear: both;
+  padding: 3em 10%;
+  color: #fff;
+  background: #134347;
+  text-align: center;
+}
+footer a {
+  display: inline-block;
+  overflow: hidden;
+  width: 40px;
+  height: 40px;
+  padding: 40px 0 0 0;
+  margin: 0 0.5em;
+  position: relative;
+  color: rgba(255, 255, 255, 0.5);
+  -webkit-transition: color 0.25s ease-out, box-shadow 0.25s ease-out;
+  -moz-transition: color 0.25s ease-out, box-shadow 0.25s ease-out;
+  transition: color 0.25s ease-out, box-shadow 0.25s ease-out;
+}
+footer a:hover, footer a:focus {
+  color: rgba(255, 255, 255, 0.3);
+  text-decoration: none;
+}
+footer a:visited {
+  color: rgba(255, 255, 255, 0.2);
+}
+footer a::before {
+  display: block;
+  position: absolute;
+  top: 3px;
+  left: 0;
+  overflow: visible;
+  font-size: 36px;
+  text-indent: 0;
+  /* icomoon.io defaults */
+  font-family: 'verdemoderna';
+  speak: none;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+}
+footer a.avenida-validate-html::before {content: "5";}
+footer a.avenida-validate-html:hover::before, footer a.avenida-validate-html:focus::before {content: "%";}
+footer a.avenida-validate-css::before {content: "3";}
+footer a.avenida-validate-css:hover::before, footer a.avenida-validate-css:focus::before {content: "#";}
+footer a.avenida-license::before {content: "c";}
+footer a.avenida-license:hover::before, footer a.avenida-license:focus::before {content: "C";}
+footer a.avenida-accessibility::before {content: "a";}
+footer a.avenida-accessibility:hover::before, footer a.avenida-accessibility:focus::before {content: "A";}
+footer a.avenida-github::before {content: "g";}
+footer a.avenida-github:hover::before, footer a.avenida-github:focus::before {content: "G";}
+
+
+
+/* low-res CSS */
+@media only screen and (max-width: 600px) {
+
+
+  /* imagen previa titulo */
+  div.avenida-bis {
+
+    background: url(dienterecortadosinfondo1.png);
+
+    background-repeat: no-repeat;
+    background-origin: padding-box;
+    padding-left: 110px;
+    margin:0;
+    background-size: 100px;
+
+    /*border: 3px dashed blue;*/
+  }
+
+
+  div.decoracion1 {
+  height: 20vh;
+  }
+
+  div.decoracion2 {
+    height: 40vh;
+  }
+
+  div.decoracion3 {
+    height: 25vh;
+  }
+
+  /* type adjustments */
+  h1 {
+    margin-top: 30px;
+    font-size: 2.5em;
+  }
+  div.explanation {
+    padding:10px;
+    margin:0;
+  }
+
+}
+
+
+@media only screen and (max-width: 500px) {
+  header {
+    height: 250px;
+    padding-top: 0;
+  }
+  h1 {
+    margin: 10px;
+  }
+  div.explanation {
+    padding:10px;
+    margin:0;
+  }
+  adding: 1em 5%;
+
+  footer a {
+    margin: 0 0.5em;
+  }
+}
+
+
+@media only screen and (max-width: 320px) {
+
+  /* adjusting the site header type size */
+  h1 {
+      font-size: 2em;
+  }
+  h2 {
+      font-size: 1.3em;
+  }
+
+div.explanation {
+  padding: 6px;
+  margin:0;
+}
+
+
+  /* adjusting footer type, icons */
+
+  footer {
+      padding: 2em 5%;
+  }
+  footer a {
+      width: 35px;
+      height: 35px;
+      padding: 35px 0 0 0;
+      margin: 0 0.5em;
+  }
+}
+
+
+/* mid-res CSS */
+@media only screen and (max-width: 1132px) {
+
+  header {
+    border-top: solid 10px rgba(19, 67, 71, 0.9);
+  }
+  div.explanation {
+  padding:10px;
+  margin:0;
+}
+  p, li {
+    font-size: 1.2em;
+  }
+
+}
+
+@media only screen and (min-width: 500px) and (max-width: 1150px) {
+
+div.explanation {
+  padding:10px;
+  margin:0;
+}
+  /* page footer */
+  footer {
+    padding: 3em 0;
+  }
+  footer a {
+    width: 52px;
+    height: 52px;
+    padding: 52px 0 0 0;
+    margin: 0 2em;
+  }
+  footer a::before {
+    font-size: 48px;
+  }
+
+}
+
+
+/* high-res CSS */
+@media only screen and (min-width: 1132px) {
+body {
+  background: #ffffff;
+  background: -moz-linear-gradient(left,  #ffffff 0%, #ffffff 66%, #e5ede8 66%, #e5ede8 100%);
+  background: -webkit-gradient(linear, left top, right top, color-stop(0%,#ffffff), color-stop(66%,#ffffff), color-stop(66%,#e5ede8), color-stop(100%,#e5ede8));
+  background: -webkit-linear-gradient(left,  #ffffff 0%,#ffffff 66%,#e5ede8 66%,#e5ede8 100%);
+  background: -o-linear-gradient(left,  #ffffff 0%,#ffffff 66%,#e5ede8 66%,#e5ede8 100%);
+  background: -ms-linear-gradient(left,  #ffffff 0%,#ffffff 66%,#e5ede8 66%,#e5ede8 100%);
+  background: linear-gradient(to right,  #ffffff 0%,#ffffff 66%,#e5ede8 66%,#e5ede8 100%);
+  font-size: 100%;
+}
+header {
+  width: 100%;
+  height: 310px;
+  padding: 30px 10%;
+  border-top: solid 12px rgba(19, 67, 71, 0.8);
+  box-shadow: inset 0 0 100px rgba(255, 255, 255, 0.3);
+  vertical-align: middle;
+  text-align: left;
+}
+
+
+
+h1 {
+  position: relative;
+  padding: 10px 0 5px 0;
+  margin: 0;
+  font-family: 'Julius Sans One', sans-serif;
+  font-size: 3.2em;
+  text-transform: uppercase;
+  /*
+  display: inline-block;
+  position: relative;
+  margin: 15px 0 0 0;
+  padding: 60px 0 5px 0;
+  */
+}
+
+h2 {
+
+  padding: 0 0 30px 0;
+  margin: 0;
+  color: rgba(255,255,255,0.6);/**/
+  font-size: 1.6em;
+  font-style: italic;
+}
+p {
+  font-size: 1em;
+}
+
+div.explanation {
+
+  padding:20px;
+  margin:0;
+}
+
+.explanation h3, .explanation p{
+  width: 100%;
+}
+.summary {
+  padding-top: 3.25em;
+}
+
+
+div.explanation, div.benefits {
+  padding-bottom: 4em;
+}
+
+
+
+
+
+@media only screen and (min-width: 1150px) {
+
+  /* page footer */
+  footer a {
+    width: 76px;
+    height: 76px;
+    padding: 76px 0 0 0;
+    margin: 0 3em;
+  }
+  footer a::before {
+    font-size: 72px;
+  }
+
+}
+
+
+/*
+Okay, look, I feel rather awful about this. But due to source order it
+seems like the only way to pull off the separated sidebar. Perhaps
+flexbox is the way forward here, once the syntax settles down a bit.
+*/
+@media only screen and (min-width: 1120px) {.avenida-resources {top: 1490px;}}
+@media only screen and (min-width: 1240px) {.avenida-resources {top: 1460px;}}
+@media only screen and (min-width: 1260px) {.avenida-resources {top: 1420px;}}
+@media only screen and (min-width: 1320px) {.avenida-resources {top: 1390px;}}
+@media only screen and (min-width: 1370px) {.avenida-resources {top: 1360px;}}
+@media only screen and (min-width: 1520px) {.avenida-resources {top: 1330px;}}
+@media only screen and (min-width: 1812px) {.avenida-resources {top: 1300px;}}
+@media only screen and (min-width: 1848px) {.avenida-resources {top: 1270px;}}
+@media only screen and (min-width: 2015px) {.avenida-resources {top: 1240px;}}
+@media only screen and (min-width: 2115px) {.avenida-resources {top: 1210px;}}
+@media only screen and (min-width: 2400px) {/* you're kidding, right? */}
+
+
+@-webkit-keyframes koan {
+  from {
+    -webkit-transform: scale(1);
+  opacity: 1;
+  }
+  to {
+    -webkit-transform: scale(3);
+  opacity: 0;
+  }
+}
+@-moz-keyframes koan {
+  from {
+    -moz-transform: scale(1);
+  opacity: 1;
+  }
+  to {
+    -moz-transform: scale(3);
+  opacity: 0;
+  }
+}
+@keyframes koan {
+  from {
+    transform: scale(1);
+  opacity: 1;
+  }
+  to {
+    transform: scale(3);
+  opacity: 0;
+  }
+}
+
+/* high-DPI adjustments */
+@media
+  (min--moz-device-pixel-ratio: 1.5),
+  (-o-min-device-pixel-ratio: 3 / 2),
+  (-webkit-min-device-pixel-ratio: 1.5),
+  (min-device-pixel-ratio: 1.5),
+  (min-resolution: 1.5dppx) {
+  header {
+      background-image: url(contours@2x.png), url(noise.png), url(gridlines.png), url(huntington.jpg);
+      background-size: 50% auto, auto, auto, cover;
+  }
+  .requirements p:last-child {
+      background-image: url(contours@2x.png), url(gridlines.png), url(noise.png), url(koi.jpg);
+      background-size: 50% auto, auto, auto, cover;
+  }
+
+}
+
+/* icon fonts */
+@font-face {
+	font-family: 'verdemoderna';
+	src:url('verdemoderna.eot');
+	src:url('verdemoderna.eot?#iefix') format('embedded-opentype'),
+		url('verdemoderna.woff') format('woff'),
+		url('verdemoderna.ttf') format('truetype'),
+		url('verdemoderna.svg#verdemoderna') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}                                                                              
