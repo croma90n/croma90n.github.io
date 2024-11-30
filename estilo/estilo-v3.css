@@ -3,7 +3,7 @@
   Julius Sans One â€“ https://fonts.google.com/specimen/Julius+Sans+One?query=julius
   Libre Baskerville â€“ https://fonts.google.com/specimen/Libre+Baskerville?query=baskerville
  */
-@import url(http://fonts.googleapis.com/css?family=Julius+Sans+One|Libre+Baskerville:400,400italic);
+@import url(http://fonts.googleapis.com/css?family=Julius+Sans+One|Parkinsans);
 
 
 
@@ -23,30 +23,12 @@ body {
   margin: 0;
   color: #325050;
   background: #fff;
-  font-family: 'Libre Baskerville', sans-serif;
+  font-family: 'Parkinsans', sans-serif;
+  font-weight: lighter;
+  /*font-family: 'Libre Baskerville', sans-serif;*/
   font-size: 70%;
 }
-a {
-  color: #0d8ba1;
-  text-decoration: none;
-}
-a:visited {
-  color: #1a5952;
-}
-a:hover, a:focus {
-  color: #0599c2;
-  text-decoration: underline;
-  -webkit-transition: all 0.25s ease-out;
-  -moz-transition: all 0.25s ease-out;
-  transition: all 0.25s ease-out;
-}
 
-abbr {
-  border: none;
-  text-transform: uppercase;
-  font-size: 0.9em;
-  letter-spacing: 0.01em;
-}
 header {
   height: 230px;
   padding: 20px 0 70px 0;
@@ -58,10 +40,11 @@ header {
   background-size:auto;
   text-align: center;
   /*border: 3px dashed yellow;*/
+  box-shadow:inset 0 -.5em 3em rgba(0, 0, 0, 0.5);
 }
 
 /* imagen previa titulo */
-div#avenida-bis {
+div.avenida-bis {
 
   background: url(dienterecortadosinfondo1.png);
 
@@ -111,9 +94,11 @@ h3 {
   text-transform: uppercase;
 }
 p {
-  margin: 0.75em 0;
+  margin: 0.70em 0;
   line-height: 2;
 }
+
+
 
 div.explanation {
   padding-bottom: 4em;
@@ -121,7 +106,18 @@ div.explanation {
   padding:0;
   margin:0;
 }
+/* debe de estar después paa que lo lea el css  */
+div.primera, div.contacto{
+  background-color: rgba(138,188,159,0.3);
+}
 
+div.servicios, div.contacto{
+  text-align: center;
+}
+
+div.dec {
+box-shadow:inset 0 -.5em 2em rgba(0, 0, 0, 0.5);
+}
 div.decoracion1 {
   background: #0d2c40 url(recorte_entrada.png);
   background-repeat: no-repeat;
@@ -136,13 +132,11 @@ div.decoracion1 {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
-div.decoracion1 div {
-  text-align: left;
-  padding: 0em;
-  margin:0;
-  border:0;
-
-  border: 3px dashed blue;
+div.decoracion2 div {
+  text-align: right;
+  padding: 1em;
+  marin
+  /*border: 3px dashed blue;*/
   /*border: 3px dashed blue;*/
 }
 
@@ -177,26 +171,6 @@ div.decoracion3 {
   box-sizing: border-box;
 }
 
-
-/* intro block links -- download HTML/CSS */
-.intro a, .intro a:visited {
-  position: relative;
-  display: inline-block;
-  padding: 1px 10px 0 32px;
-  margin: -1px -10px -1px -6px;
-  -webkit-border-radius: 2px;
-  -moz-border-radius: 2px;
-  border-radius: 2px;
-  color: #809b7e;
-  font-family: 'Julius Sans One', sans-serif;
-  text-transform: uppercase;
-}
-.intro a:hover, .intro a:focus {
-  z-index: 2;
-  color: #fff;
-  background: #3d8a9f;
-  text-decoration: none;
-}
 
 /* coloured cutoff */
 div.participation, div.benefits {
@@ -269,6 +243,22 @@ footer a.avenida-github:hover::before, footer a.avenida-github:focus::before {co
 /* low-res CSS */
 @media only screen and (max-width: 600px) {
 
+
+  /* imagen previa titulo */
+  div.avenida-bis {
+
+    background: url(dienterecortadosinfondo1.png);
+
+    background-repeat: no-repeat;
+    background-origin: padding-box;
+    padding-left: 110px;
+    margin:0;
+    background-size: 100px;
+
+    /*border: 3px dashed blue;*/
+  }
+
+
   div.decoracion1 {
   height: 20vh;
   }
@@ -302,12 +292,12 @@ footer a.avenida-github:hover::before, footer a.avenida-github:focus::before {co
   h1 {
     margin: 10px;
   }
-div.explanation {
-  padding:10px;
-  margin:0;
-}
-adding: 1em 5%;
+  div.explanation {
+    padding:10px;
+    margin:0;
   }
+  adding: 1em 5%;
+
   footer a {
     margin: 0 0.5em;
   }
