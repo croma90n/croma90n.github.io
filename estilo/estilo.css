@@ -1,0 +1,264 @@
+/* css released under Creative Commons License - http://creativecommons.org/licenses/by-nc-sa/1.0/  */
+/* All associated graphics copyright 2013, Dave Shea */
+
+/* IMPORTANT */
+/* This design is not a template. You may not reproduce it elsewhere without the
+ designer's written permission. However, feel free to study the CSS and use
+ techniques you learn from it elsewhere. */
+
+
+/*
+  web fonts from Google:
+  Julius Sans One â€“ https://fonts.google.com/specimen/Julius+Sans+One?query=julius
+  Libre Baskerville â€“ https://fonts.google.com/specimen/Libre+Baskerville?query=baskerville
+ */
+@import url(http://fonts.googleapis.com/css?family=Julius+Sans+One|Libre+Baskerville:400,400italic);
+
+
+
+/* base CSS */
+* {
+  -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+  box-sizing: border-box;         /* Opera/IE 8+ */
+}
+
+html {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+    padding: 0;
+  margin: 0;
+  color: #325050;
+  font-family: 'Libre Baskerville', sans-serif;
+  background: #ffffff;
+  background: -moz-linear-gradient(left,  #ffffff 0%, #ffffff 66%, #e5ede8 66%, #e5ede8 100%);
+  background: -webkit-gradient(linear, left top, right top, color-stop(0%,#ffffff), color-stop(66%,#ffffff), color-stop(66%,#e5ede8), color-stop(100%,#e5ede8));
+  background: -webkit-linear-gradient(left,  #ffffff 0%,#ffffff 66%,#e5ede8 66%,#e5ede8 100%);
+  background: -o-linear-gradient(left,  #ffffff 0%,#ffffff 66%,#e5ede8 66%,#e5ede8 100%);
+  background: -ms-linear-gradient(left,  #ffffff 0%,#ffffff 66%,#e5ede8 66%,#e5ede8 100%);
+  background: linear-gradient(to right,  #ffffff 0%,#ffffff 66%,#e5ede8 66%,#e5ede8 100%);
+  font-size: 100%;
+}
+
+
+
+
+header {
+  width: 100%;
+  height: 310px; /*310*/
+  padding: 20px 10%;
+  vertical-align: middle;
+
+  background: #2d6360 50% 0 url(header.jpg) no-repeat; /* old IE fallback */
+  background-image: url(header.png);
+  background-attachment: fixed;
+  background-position:0 0;
+  background-repeat: no-repeat;
+  background-size:auto;
+  text-align: left;
+  box-shadow: inset 0 0 100px rgba(255, 255, 255, 0.3);
+  /*border: 3px dashed yellow;*/
+}
+
+/* imagen previa titulo */
+
+div#avenida-bis {
+
+  background: url(dienterecortadosinfondo1.png);
+
+  background-repeat: no-repeat;
+  background-origin: padding-box;
+  padding-left: 110px;
+  margin:0;
+  background-size: 100px;
+
+  /*border: 3px dashed blue;*/
+}
+
+h1, h2 {
+
+  color: #fff;
+  font-weight: normal;
+  text-align: left;
+  /*border: 3px dashed yellow;*/
+}
+
+h1 {
+  position: relative;
+  padding: 10px 0 5px 0;
+  margin: 0;
+  font-family: 'Julius Sans One', sans-serif;
+  font-size: 3.2em;
+  text-transform: uppercase;
+    
+  }
+h2 {
+  padding: 0 0 30px 0;
+  margin: 0;
+  color: rgba(255,255,255,0.6);
+  font-size: 1.6em;
+  font-style: italic;
+  }
+
+h3 {
+  margin: 2em 0 0 0;
+  color: #2e484c;
+  font-family: 'Julius Sans One', sans-serif;
+  font-size: 1.8em;
+  font-weight: normal;
+  text-transform: uppercase;
+}
+p {
+  font-size: 1.5em;
+  margin: 0.75em 0;
+  line-height: 2;
+}
+
+.summary, .explanation{
+  /*padding-top: 3.25em;*/
+
+  width: 66%;
+  padding: 1em 5% 1em 10%;
+}
+
+div.explanation {
+  padding-bottom: 4em;
+  background-color: rgba(138,188,159,0.5);
+}
+
+div.decoracion1 {
+  background: #0d2c40 url(decorativo1.png);
+  background-repeat: no-repeat;
+  background-position: right left;
+  background-size: cover;
+  position: relative;
+  color: #ffffff;
+  /*width: 66%;*/
+  height: 50vh;
+  margin: 0;
+  padding: 0 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+div.decoracion2 {
+  background: #0d2c40 url(avatarclinica2.png);
+  background-repeat: no-repeat;
+  background-position: right left;
+  background-size: cover;
+  position: relative;
+  color: #ffffff;
+  width: 66%;
+  height: 50vh;
+  margin: 0;
+  padding: 0 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+div.decoracion3 {
+  background: #0d2c40 url(recorte_entrada.png);
+  background-repeat: no-repeat;
+  background-position: right left;
+  background-size: cover;
+  position: relative;
+  color: #ffffff;
+  width: 66%;
+  height: 40vh;
+  margin: 0;
+  padding: 0 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* main layout blocks */
+nav, .supporting {
+  display: inline;
+}
+
+
+/* extra padding at the cutoffs */
+
+
+
+
+
+/* sidebar styling */
+.design-selection {
+
+  position: absolute;
+  top: 360px;
+  right: 0;
+  width: 33.3%;
+  padding: 0 0 20px 0;
+  margin: 0;
+  overflow: visible;
+  background: transparent;
+}
+
+
+.sidebar li {
+
+  float: none;
+  width: auto;
+  padding-left: 0;
+  padding-right: 0;
+  margin: 0 29.4% 0 14.7%; /* 0 10% 0 5% of total width */
+  
+}
+
+/* select a design */
+.design-selection li:first-child {
+  border-top: 0;
+}
+.design-selection li:hover, .design-selection li:focus {
+  background: none;
+}
+
+
+
+
+
+
+
+@media only screen and (min-width: 1150px) {
+
+  /* page footer */
+  footer a {
+    width: 76px;
+    height: 76px;
+    padding: 76px 0 0 0;
+    margin: 0 3em;
+  }
+  footer a::before {
+    font-size: 72px;
+  }
+
+}
+
+
+@media only screen and (max-width: 500px) {
+  header {
+    height: 250px;
+    padding-top: 0;
+  }
+  h1 {
+    margin: 0;
+  }
+
+  .design-archives {
+    top: 180px;
+  }
+  .design-selection li, .avenida-resources li {
+    padding: 1em 5%;
+  }
+  footer a {
+    margin: 0 0.5em;
+  }
+}
